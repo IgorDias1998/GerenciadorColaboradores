@@ -1,8 +1,6 @@
-﻿
-
-namespace BaseLibrary.Entities
+﻿namespace BaseLibrary.Entities
 {
-    public class AplicationUser
+    public class ApplicationUser
     {
         public int Id { get; set; }
         public string? Name { get; set; }

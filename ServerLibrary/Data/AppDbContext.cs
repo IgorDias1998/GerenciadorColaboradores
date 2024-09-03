@@ -11,7 +11,7 @@ namespace ServerLibrary.Data
         public DbSet<Department> Departments { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Town> Towns { get; set; }
-        public DbSet<AplicationUser> AplicationUsers { get; set; }
+        public DbSet<ApplicationUser> AplicationUsers { get; set; }
 
     }
 
