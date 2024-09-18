@@ -4,8 +4,12 @@ using System;
 
 namespace ServerLibrary.Data
 {
-    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+    public class AppDbContext : DbContext
     {
+
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<GeneralDepartment> GenaralDepartments { get; set; }
         public DbSet<Department> Departments { get; set; }
@@ -14,7 +18,6 @@ namespace ServerLibrary.Data
         public DbSet<ApplicationUser> AplicationUsers { get; set; }
         public DbSet<SystemRole> SystemRoles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
-
+        public DbSet<RefreshTokenInfo> RefreshTokensInfos { get; set; }
     }
-
 }
